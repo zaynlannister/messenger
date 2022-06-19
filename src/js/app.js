@@ -1,6 +1,14 @@
-import '../scss/app.scss';
+import {User} from './user.js';
+import {Chat} from './chat.js';
 
-/* Your JS Code goes here */
+let person = new User({
+    name: 'Mike',
+    lastName: 'Johnson',
+    username: 'sfdoskdsokd@gmail.com'
+})
 
-/* Demo JS */
-import './demo.js';
+let chat = new Chat({id: 1});
+
+chat.sendMessage(person, 'привет');
+
+// console.log(chat)
